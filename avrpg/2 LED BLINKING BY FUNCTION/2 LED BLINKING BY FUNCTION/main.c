@@ -1,4 +1,4 @@
-/* fiy i tried  maximum but the output is error --
+/* fiy i tried  maximum but can't get the output  --
  * 2 LED BLINKING BY FUNCTION.c
  *
  * Created: 11/16/2025 7:56:25 PM
