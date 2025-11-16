@@ -1,0 +1,23 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Led" CircId="Led-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-340,28" rotation="180" hflip="1" vflip="1" label="Led-1" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Green" Grounded="false" Threshold="3.5 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="MCU" CircId="mega328-2" mainComp="false" Show_id="true" Show_Val="false" Pos="-272,-16" rotation="0" hflip="1" vflip="1" label="mega328-2" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../new avr projects/2 LED BLINKING/2 LED BLINKING/Debug/2 LED BLINKING.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Ground" CircId="Ground-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-392,100" rotation="0" hflip="1" vflip="1" label="Ground-3" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Led" CircId="Led-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-344,56" rotation="180" hflip="1" vflip="1" label="Led-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Node" CircId="Node-10" mainComp="false" Pos="-392,60" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Led-1-lPin" endpinid="mega328-2-PORTD2" pointList="-324,28,-296,28,-296,16,-280,16" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Led-6-lPin" endpinid="mega328-2-PORTD3" pointList="-328,56,-288,56,-288,24,-280,24" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Led-1-rPin" endpinid="Node-10-0" pointList="-356,28,-392,28,-392,60" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Node-10-2" endpinid="Ground-3-Gnd" pointList="-392,60,-392,84" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Node-10-1" endpinid="Led-6-rPin" pointList="-392,60,-392,56,-360,56" />
+
+</circuit>
