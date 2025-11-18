@@ -1,4 +1,4 @@
-/*
+/* fiy i tried  maximum but can't get the output  --
  * 2 LED BLINKING BY FUNCTION.c
  *
  * Created: 11/16/2025 7:56:25 PM
@@ -15,7 +15,11 @@
 #include <avr/io.h>
 #include<util/delay.h>
 
+<<<<<<< HEAD
  void CW(void)//
+=======
+void CW(void)//
+>>>>>>> 1c7ee0814a33777b03618e7c9200f58583407ccb
  {
 	 PORTD|=(1<<PD2);
 	 PORTD&=~(1<<PD3);
