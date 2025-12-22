@@ -1,0 +1,31 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Potentiometer" CircId="Potentiometer-1" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-380,-24" rotation="0" hflip="1" vflip="1" label="Potentiometer-1" idLabPos="-16,-40" labelrot="0" valLabPos="15,-20" valLabRot="0" Resistance="1 kΩ" Value_Ohm="569 Ω" Slider="false" Scale="1" />
+
+<item itemtype="Hd44780" CircId="Hd44780-2" mainComp="false" Show_id="true" Show_Val="false" Pos="-244,-24" rotation="0" hflip="1" vflip="1" label="Hd44780-2" idLabPos="70,-82" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="2" Cols="16" />
+
+<item itemtype="MCU" CircId="mega328-3" mainComp="false" Show_id="true" Show_Val="false" Pos="20,-104" rotation="0" hflip="1" vflip="1" label="mega328-3" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../new avr projects/lcd/lcd/Debug/lcd.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Ground" CircId="Ground-7" mainComp="false" Show_id="false" Show_Val="false" Pos="-348,0" rotation="0" hflip="1" vflip="1" label="Ground-7" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-8" mainComp="false" Show_id="false" Show_Val="false" Pos="-428,-24" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-8" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Hd44780-2-dataPin7" endpinid="mega328-3-PORTD2" pointList="-148,-16,-148,8,-12,8,-12,-72,12,-72" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Hd44780-2-dataPin6" endpinid="mega328-3-PORTD3" pointList="-156,-16,-156,20,-4,20,-4,-64,12,-64" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Hd44780-2-dataPin5" endpinid="mega328-3-PORTD4" pointList="-164,-16,-164,32,4,32,4,-56,12,-56" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Hd44780-2-dataPin4" endpinid="mega328-3-PORTD5" pointList="-172,-16,-172,40,8,40,8,-16,12,-16" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Hd44780-2-PinEn" endpinid="mega328-3-PORTB3" pointList="-212,-16,-212,72,96,72,96,-8,60,-8" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Hd44780-2-PinRW" endpinid="Potentiometer-1-PinM" pointList="-220,-16,-220,24,-380,24,-380,-8" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Potentiometer-1-PinB" endpinid="Ground-7-Gnd" pointList="-364,-24,-348,-24,-348,-16" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Fixed Voltage-8-outnod" endpinid="Potentiometer-1-PinA" pointList="-412,-24,-396,-24" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Hd44780-2-PinRS" endpinid="mega328-3-PORTB4" pointList="-228,-16,-228,88,108,88,108,-16,60,-16" />
+
+</circuit>
